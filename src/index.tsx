@@ -2,14 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import App from './App';
+import UnderConstruction from './Components/UnderConstruction/UnderConstruction';
 import reportWebVitals from './reportWebVitals';
+import appSettings from './appSettings.json';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    { appSettings.isUnderConstrucionEnabled ? <UnderConstruction /> : <App /> }
   </React.StrictMode>
 );
 
