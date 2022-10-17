@@ -7,7 +7,7 @@ import LanguageSelector from '../Utils/LanguageSelector';
 
 const UnderConstruction = () => {
   const { t, i18n } = useTranslation();
-  const currentLanguage = i18n.language;
+  const currentLanguage = i18n.languages[0];
 
   return (
     <div className={styles['under-construction']}>
@@ -18,7 +18,7 @@ const UnderConstruction = () => {
             
             <div className='row'>
               <div className='col'>
-                <img className={`${styles.logo} d-block mx-auto`} src={require(`../../assets/${currentLanguage}/logo.png`)} alt="logo"/>
+                <img className={`${styles.logo} d-block mx-auto mb-4`} src={require(`../../assets/${currentLanguage}/logo.png`)} alt="logo"/>
               </div>
             </div>
             <div className='row'>

@@ -10,7 +10,7 @@ type Props = {
 const LanguageSelector: React.FC<Props> = (props) => {
   const { i18n } = useTranslation();
   const languages = Object.keys(i18n.options.resources || {});
-  const selectedLanguage = i18n.language;
+  const selectedLanguage = i18n.languages[0];
 
   const handleOnSelect: ChangeEventHandler<HTMLSelectElement> = (
     event: ChangeEvent<HTMLSelectElement>
