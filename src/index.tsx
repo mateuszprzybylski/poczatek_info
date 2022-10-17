@@ -5,6 +5,7 @@ import App from './App';
 import UnderConstruction from './Components/UnderConstruction/UnderConstruction';
 import reportWebVitals from './reportWebVitals';
 import appSettings from './appSettings.json';
+import './i18n';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

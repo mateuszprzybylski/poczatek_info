@@ -1,9 +1,16 @@
 @import '../../globals.scss';
 
 .under-construction {
-  background: url('../../assets/background.jpg') #019e55 no-repeat
-    center center scroll;
+  background: url('../../assets/background.jpg') #019e55 no-repeat center center
+    scroll;
   background-size: cover;
+}
+
+.language-selector {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 4;
 }
 
 .masthead {
