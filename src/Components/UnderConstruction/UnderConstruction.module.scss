@@ -1,0 +1,92 @@
+@import '../../globals.scss';
+
+.under-construction {
+  background: url('../../assets/background.jpg') #019e55 no-repeat
+    center center scroll;
+  background-size: cover;
+}
+
+.masthead {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $secondary;
+  }
+
+  .masthead-content {
+    position: relative;
+    max-width: 40rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-weight: 200;
+  }
+
+  .logo {
+    width: 70%;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100%;
+    width: 75vw;
+    min-height: 0;
+    padding-bottom: 0;
+
+    &:before {
+      transform: skewX(-9deg);
+      transform-origin: top right;
+    }
+
+    .masthead-content {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 2rem;
+      padding-right: 9rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .masthead {
+    width: 65vw;
+  }
+}
+
+.social-icons {
+  position: relative;
+  z-index: 2;
+}
+
+.social-icons .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 100rem;
+}
+
+@media (min-width: 992px) {
+  .social-icons {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 2.5rem;
+    width: auto;
+  }
+}
