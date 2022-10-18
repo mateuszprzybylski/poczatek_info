@@ -1,14 +1,12 @@
-import useLocalStorage from 'use-local-storage';
 import appSettings from './appSettings.json';
 import UnderConstruction from './Components/UnderConstruction/UnderConstruction';
+import { useAppSelector } from './store/hooks';
 
 const App = () => {
-  const [theme] = useLocalStorage('theme', 'light');
-
-  console.log("theme", theme)
+  const isDarkMode = useAppSelector(state => state.ui.isDarkMode);
 
   return (
-    <div data-theme={theme}>
+    <div data-theme={isDarkMode ? 'dark' : 'light'}>
       {appSettings.isUnderConstrucionEnabled ? (
         <UnderConstruction />
       ) : (

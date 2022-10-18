@@ -1,6 +1,12 @@
 import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import useLocalStorage from 'use-local-storage';
+import { useCallback, useEffect } from 'react';
+import { useAppDispatch, useAppSelector } from '../../store/hooks';
+import {
+  disabeDarkMode,
+  enableDarkMode,
+  toggleDarkMode,
+} from '../../store/uiSlice';
 import styles from './ThemeSwitcher.module.scss';
 
 type Props = {
@@ -8,20 +14,40 @@ type Props = {
 };
 
 const ThemeSwitcher: React.FC<Props> = (props) => {
-  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const [theme, setTheme] = useLocalStorage(
-    'theme',
-    defaultDark ? 'dark' : 'light'
-  );
-  const isDark = theme === 'dark';
+  const isDarkMode = useAppSelector((state) => state.ui.isDarkMode);
+  const dispatch = useAppDispatch();
 
-  const handleOnCLick = () => {
-    setTheme(isDark ? 'light' : 'dark');
-  }
+  useEffect(() => {
+    const localStorageDarkMode = localStorage.getItem('isDarkMode');
+
+    if (localStorageDarkMode === null) {
+      const isBrowserDarkMode = window.matchMedia(
+        '(prefers-color-scheme: dark)'
+      ).matches;
+
+      if (isBrowserDarkMode) {
+        dispatch(enableDarkMode());
+      }
+    } else {
+      const isDarkModeInLocalStorage = JSON.parse(localStorageDarkMode);
+
+      isDarkModeInLocalStorage
+        ? dispatch(enableDarkMode())
+        : dispatch(disabeDarkMode());
+    }
+  }, [dispatch]);
+
+  const handleOnCLick = useCallback(() => {
+    localStorage.setItem('isDarkMode', JSON.stringify(!isDarkMode));
+    dispatch(toggleDarkMode());
+  }, [dispatch, isDarkMode]);
 
   return (
-    <div className={`btn ${props.className} ${styles['theme-switcher']}`} onClick={handleOnCLick}>
-      <FontAwesomeIcon icon={isDark ? faSun : faMoon} />
+    <div
+      className={`btn ${props.className} ${styles['theme-switcher']}`}
+      onClick={handleOnCLick}
+    >
+      <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} />
     </div>
   );
 };

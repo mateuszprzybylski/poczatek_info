@@ -4,9 +4,11 @@ import styles from './UnderConstruction.module.scss';
 import { useTranslation } from 'react-i18next';
 import LanguageSelector from '../Utils/LanguageSelector';
 import ThemeSwitcher from '../Utils/ThemeSwitcher';
+import { useAppSelector } from '../../store/hooks';
 
 const UnderConstruction = () => {
   const { t, i18n } = useTranslation();
+  const isDarkMode = useAppSelector((state) => state.ui.isDarkMode);
   const currentLanguage = i18n.languages[0];
 
   return (
@@ -22,7 +24,7 @@ const UnderConstruction = () => {
               <div className='col'>
                 <img
                   className={`${styles.logo} d-block mx-auto mb-4`}
-                  src={require(`../../assets/${currentLanguage}/logo.png`)}
+                  src={require(`../../assets/${currentLanguage}/${isDarkMode ? 'logo_dark' : 'logo'}.png`)}
                   alt='logo'
                 />
               </div>
