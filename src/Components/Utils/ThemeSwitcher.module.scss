@@ -1,13 +1,7 @@
-@import '../../globals.scss';
-
-.language-selector {
-  border: 0;
-  width: auto;
-  padding: 6px 10px;
-  background-color: var(--primary-bg);
+.theme-switcher {
   color: var(--primary-text);
-  background-image: unset;
-  cursor: pointer;
+  background-color: var(--primary-bg);
+  padding: 5px 10px;
   border: 0;
 
   &:hover, &:active, &:focus-visible, &:focus-visible {

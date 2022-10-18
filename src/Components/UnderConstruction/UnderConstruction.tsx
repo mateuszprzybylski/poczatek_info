@@ -3,7 +3,7 @@ import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import styles from './UnderConstruction.module.scss';
 import { useTranslation } from 'react-i18next';
 import LanguageSelector from '../Utils/LanguageSelector';
-
+import ThemeSwitcher from '../Utils/ThemeSwitcher';
 
 const UnderConstruction = () => {
   const { t, i18n } = useTranslation();
@@ -11,14 +11,20 @@ const UnderConstruction = () => {
 
   return (
     <div className={styles['under-construction']}>
-      <LanguageSelector className={styles['language-selector']}/>
+      <div className={styles['controls']}>
+        <ThemeSwitcher />
+        <LanguageSelector />
+      </div>
       <div className={styles.masthead}>
-        <div className={`${styles['masthead-content']} text-black`}>
+        <div className={`${styles['masthead-content']}`}>
           <div className='container'>
-            
             <div className='row'>
               <div className='col'>
-                <img className={`${styles.logo} d-block mx-auto mb-4`} src={require(`../../assets/${currentLanguage}/logo.png`)} alt="logo"/>
+                <img
+                  className={`${styles.logo} d-block mx-auto mb-4`}
+                  src={require(`../../assets/${currentLanguage}/logo.png`)}
+                  alt='logo'
+                />
               </div>
             </div>
             <div className='row'>
@@ -32,12 +38,12 @@ const UnderConstruction = () => {
       <div className={styles['social-icons']}>
         <div className='d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0'>
           <a
-            className='m-1 link-secondary'
+            className='m-1'
             href='https://www.facebook.com/poczatek.kredytu'
             target='_blank'
-            rel="noreferrer"
+            rel='noreferrer'
           >
-            <FontAwesomeIcon icon={faFacebook} size="4x" />
+            <FontAwesomeIcon icon={faFacebook} size='4x' />
           </a>
         </div>
       </div>

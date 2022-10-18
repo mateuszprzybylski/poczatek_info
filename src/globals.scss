@@ -1,2 +1,20 @@
+$dark: #212529;
+$light: #f8f9fa;
 $primary: #019e55;
 $secondary: #edefef;
+
+:root {
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --primary-text: #{$dark};
+  --primary-btn: #{$light};
+  --primary-bg: #{$light};
+}
+
+[data-theme='dark'] {
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --primary-text: #{$light};
+  --primary-btn: #{$dark};
+  --primary-bg: #{$dark};
+}

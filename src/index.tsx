@@ -2,9 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import App from './App';
-import UnderConstruction from './Components/UnderConstruction/UnderConstruction';
 import reportWebVitals from './reportWebVitals';
-import appSettings from './appSettings.json';
 import './i18n';
 
 const root = ReactDOM.createRoot(
@@ -12,7 +10,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    { appSettings.isUnderConstrucionEnabled ? <UnderConstruction /> : <App /> }
+    <App />
   </React.StrictMode>
 );
 
