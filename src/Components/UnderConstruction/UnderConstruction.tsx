@@ -31,7 +31,7 @@ const UnderConstruction = () => {
             </div>
             <div className='row'>
               <div className='col'>
-                <p className='mb-5 text-center'>... {t('Page in build')}</p>
+                <p className='mb-5 text-center'>... {t('Site under construction')}</p>
               </div>
             </div>
           </div>
