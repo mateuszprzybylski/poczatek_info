@@ -1,44 +1,46 @@
+import { useCallback, useEffect } from 'react';
 import { faMoon, faSun } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useCallback, useEffect } from 'react';
 import { useAppDispatch, useAppSelector } from '../../store/hooks';
 import {
   disabeDarkMode,
   enableDarkMode,
   toggleDarkMode,
 } from '../../store/uiSlice';
+import {
+  getLocalStorageItem,
+  isBrowserDarkMode,
+  setLocalStorageItem,
+} from '../../utils/uiUtils';
 import styles from './ThemeSwitcher.module.scss';
 
 type Props = {
   className?: string;
 };
 
+export const THEME_ICONS = {
+  dark: faMoon,
+  light: faSun,
+}
+
 const ThemeSwitcher: React.FC<Props> = (props) => {
   const isDarkMode = useAppSelector((state) => state.ui.isDarkMode);
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    const localStorageDarkMode = localStorage.getItem('isDarkMode');
+    const isDarkMode = getLocalStorageItem<boolean>('isDarkMode');
 
-    if (localStorageDarkMode === null) {
-      const isBrowserDarkMode = window.matchMedia(
-        '(prefers-color-scheme: dark)'
-      ).matches;
-
-      if (isBrowserDarkMode) {
+    if (isDarkMode === null) {
+      if (isBrowserDarkMode()) {
         dispatch(enableDarkMode());
       }
     } else {
-      const isDarkModeInLocalStorage = JSON.parse(localStorageDarkMode);
-
-      isDarkModeInLocalStorage
-        ? dispatch(enableDarkMode())
-        : dispatch(disabeDarkMode());
+      isDarkMode ? dispatch(enableDarkMode()) : dispatch(disabeDarkMode());
     }
   }, [dispatch]);
 
   const handleOnCLick = useCallback(() => {
-    localStorage.setItem('isDarkMode', JSON.stringify(!isDarkMode));
+    setLocalStorageItem('isDarkMode', !isDarkMode);
     dispatch(toggleDarkMode());
   }, [dispatch, isDarkMode]);
 
@@ -47,7 +49,7 @@ const ThemeSwitcher: React.FC<Props> = (props) => {
       className={`btn ${props.className} ${styles['theme-switcher']}`}
       onClick={handleOnCLick}
     >
-      <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} />
+      <FontAwesomeIcon icon={isDarkMode ? THEME_ICONS.light : THEME_ICONS.dark} />
     </div>
   );
 };

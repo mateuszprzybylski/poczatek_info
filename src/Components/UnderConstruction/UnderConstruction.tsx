@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import LanguageSelector from '../Utils/LanguageSelector';
 import ThemeSwitcher from '../Utils/ThemeSwitcher';
 import { useAppSelector } from '../../store/hooks';
+import appSettings from '../../appSettings.json';
 
 const UnderConstruction = () => {
   const { t, i18n } = useTranslation();
@@ -41,7 +42,7 @@ const UnderConstruction = () => {
         <div className='d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0'>
           <a
             className='m-1'
-            href='https://www.facebook.com/poczatek.kredytu'
+            href={appSettings.facebookPageUrl}
             target='_blank'
             rel='noreferrer'
           >

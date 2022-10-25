@@ -1,9 +1,18 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import { renderWithProviders } from './tests/test-utils';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+jest.mock('./appSettings.json', () => ({
+  get isUnderConstrucionEnabled() {
+    return false;
+  },
+}));
+
+describe('App', () => {
+  test('renders learn react link', () => {
+    renderWithProviders(<App />);
+    const linkElement = screen.getByText(/App/i);
+    expect(linkElement).toBeInTheDocument();
+  });
 });
