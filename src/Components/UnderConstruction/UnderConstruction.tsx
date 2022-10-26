@@ -2,54 +2,39 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import styles from './UnderConstruction.module.scss';
 import { useTranslation } from 'react-i18next';
-import LanguageSelector from '../Utils/LanguageSelector';
-import ThemeSwitcher from '../Utils/ThemeSwitcher';
-import { useAppSelector } from '../../store/hooks';
 import appSettings from '../../appSettings.json';
+import LandingPage from '../LandingPage/LandingPage';
 
 const UnderConstruction = () => {
-  const { t, i18n } = useTranslation();
-  const isDarkMode = useAppSelector((state) => state.ui.isDarkMode);
-  const currentLanguage = i18n.languages[0];
+  const { t } = useTranslation();
 
   return (
     <div className={styles['under-construction']}>
-      <div className={styles['controls']}>
-        <ThemeSwitcher />
-        <LanguageSelector />
-      </div>
-      <div className={styles.masthead}>
-        <div className={`${styles['masthead-content']}`}>
-          <div className='container'>
-            <div className='row'>
-              <div className='col'>
-                <img
-                  className={`${styles.logo} d-block mx-auto mb-4`}
-                  src={require(`../../assets/${currentLanguage}/${isDarkMode ? 'logo_dark' : 'logo'}.png`)}
-                  alt='logo'
-                />
-              </div>
-            </div>
-            <div className='row'>
-              <div className='col'>
-                <p className='mb-5 text-center'>... {t('Site under construction')}</p>
-              </div>
+      <LandingPage
+        belowLogo={
+          <div className='row'>
+            <div className='col'>
+              <p className='mb-5 text-center'>
+                ... {t('Site under construction')}
+              </p>
             </div>
           </div>
-        </div>
-      </div>
-      <div className={styles['social-icons']}>
-        <div className='d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0'>
-          <a
-            className='m-1'
-            href={appSettings.facebookPageUrl}
-            target='_blank'
-            rel='noreferrer'
-          >
-            <FontAwesomeIcon icon={faFacebook} size='4x' />
-          </a>
-        </div>
-      </div>
+        }
+        aside={
+          <div className={styles['social-icons']}>
+            <div className='d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0'>
+              <a
+                className='m-1'
+                href={appSettings.facebookPageUrl}
+                target='_blank'
+                rel='noreferrer'
+              >
+                <FontAwesomeIcon icon={faFacebook} size='4x' />
+              </a>
+            </div>
+          </div>
+        }
+      />
     </div>
   );
 };

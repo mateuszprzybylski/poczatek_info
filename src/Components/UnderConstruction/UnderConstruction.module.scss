@@ -1,91 +1,7 @@
 @import '../../globals.scss';
 
 .under-construction {
-  background: url('../../assets/background_mobile.jpg') #019e55 no-repeat bottom center;
-  background-size: cover;
   height: 100%;
-}
-
-.controls {
-  display: flex;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 4;
-  justify-content: flex-end;
-  align-items: center;
-
-  > * {
-    margin-left: 10px;
-  }
-}
-
-.masthead {
-  position: relative;
-  overflow: hidden;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--primary-text);
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--primary-bg);
-  }
-
-  .masthead-content {
-    position: relative;
-    max-width: 40rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    font-weight: 200;
-  }
-
-  .logo {
-    width: 70%;
-  }
-}
-
-@media (min-width: 992px) {
-  .under-construction {
-    background: url('../../assets/background.jpg') #019e55 no-repeat top right
-      scroll;
-    background-size: contain;
-    height: 100%;
-  }
-
-  .masthead {
-    height: 100%;
-    width: 60vw;
-    min-height: 0;
-    padding-bottom: 0;
-
-    &:before {
-      transform: skewX(-9deg);
-      transform-origin: top right;
-    }
-
-    .masthead-content {
-      padding-top: 0;
-      padding-bottom: 0;
-      padding-left: 2rem;
-      padding-right: 9rem;
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .masthead {
-    width: 65vw;
-  }
 }
 
 .social-icons {
@@ -105,7 +21,7 @@
   .social-icons {
     position: absolute;
     height: 100%;
-    top: 0;
+    top: $navbar-height;
     right: 2.5rem;
     width: auto;
   }
