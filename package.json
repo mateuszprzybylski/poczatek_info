@@ -62,6 +62,7 @@
       "!src/i18n.js",
       "!src/languageDetectorOptions.js",
       "!src/reportWebVitals.ts",
+      "!src/tests/mocks/*.{js,jsx,ts,tsx}",
       "!<rootDir>/node_modules/",
       "!<rootDir>/public/",
       "!<rootDir>/build/",

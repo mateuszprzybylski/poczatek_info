@@ -1,8 +1,7 @@
 @import '../../globals.scss';
 
 .under-construction {
-  background: url('../../assets/background.jpg') #019e55 no-repeat center center
-    scroll;
+  background: url('../../assets/background_mobile.jpg') #019e55 no-repeat bottom center;
   background-size: cover;
   height: 100%;
 }
@@ -56,9 +55,16 @@
 }
 
 @media (min-width: 992px) {
+  .under-construction {
+    background: url('../../assets/background.jpg') #019e55 no-repeat top right
+      scroll;
+    background-size: contain;
+    height: 100%;
+  }
+
   .masthead {
     height: 100%;
-    width: 75vw;
+    width: 60vw;
     min-height: 0;
     padding-bottom: 0;
 
