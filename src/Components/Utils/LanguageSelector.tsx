@@ -1,5 +1,4 @@
 import { useTranslation } from 'react-i18next';
-import Form from 'react-bootstrap/Form';
 import { ChangeEvent, ChangeEventHandler } from 'react';
 import styles from './LanguageSelector.module.scss';
 
@@ -19,8 +18,8 @@ const LanguageSelector: React.FC<Props> = (props) => {
   };
 
   return (
-    <Form.Select
-      className={`${props.className} ${styles['language-selector']}`}
+    <select
+      className={`form-select ${props.className} ${styles['language-selector']}`}
       aria-label='Language selector'
       onChange={handleOnSelect}
       value={selectedLanguage}
@@ -30,7 +29,7 @@ const LanguageSelector: React.FC<Props> = (props) => {
           {language.toUpperCase()}
         </option>
       ))}
-    </Form.Select>
+    </select>
   );
 };
 

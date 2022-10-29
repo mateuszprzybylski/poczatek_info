@@ -4,10 +4,10 @@ type Props = {
 
 const About: React.FC<Props> = (props) => {
   return (
-    <div className='container'>
+    <div className='container' id="about">
       <div className='row justify-content-between'>
         <div className='col-lg-8 offset-lg-2 align-self-center'>
-          <div className='about-descr'>
+          <div className='py-5 mb-5 mb-md-1'>
             <p className='p-heading'>
               im a ux /ui designer austin based who loves clean, simple & unique
               design. i also enjoy crafting brand identities, icons, &

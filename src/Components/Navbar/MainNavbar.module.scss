@@ -1,4 +1,4 @@
-@import '../../globals.scss';
+@import '../../index.scss';
 
 .main-navbar {
   background-color: var(--primary-bg);
@@ -6,17 +6,63 @@
   top: 0;
   width: 100%;
   z-index: 3;
-  transform: translateY(-$navbar-height);
+  transform: translateY(0px);
   transition: transform 0.3s;
   height: $navbar-height;
 
-  &.visible {
-    transform: translateY(0px);
+  .nav-link {
+    color: var(--primary-text);
+  }
+  
+
+  &.hidden {
+    transform: translateY(-$navbar-height);
+  }
+}
+
+.controls {
+  > * {
+    margin-left: 10px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .main-navbar {
+    position: fixed;
+    top: unset;
+    bottom: 0;
+    transform: unset;
+    transform: translateY(0);
+
+    &.hidden {
+      transform: translateY($navbar-height);
+    }
   }
 
   .controls {
-    > * {
-      margin-left: 10px;
-    }
+    position: fixed;
+    top: 15px;
+    right: 15px;
   }
 }
+
+.mobile-menu {
+  height: calc(100vh - $navbar-height);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background-color: var(--primary-bg);
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 40px 20px 20px;
+  text-align: right;
+  color: var(--primary-text);
+}
+
+.mobile-menu-btn {
+  color: var(--primary-text);
+}
+
+

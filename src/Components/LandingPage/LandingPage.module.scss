@@ -1,11 +1,4 @@
-@import '../../globals.scss';
-
-.landing-page {
-  background: url('../../assets/background_mobile.jpg') #019e55 no-repeat bottom
-    center;
-  background-size: cover;
-  height: 100%;
-}
+@import '../../index.scss';
 
 .masthead {
   position: relative;
@@ -26,6 +19,8 @@
     height: 100%;
     width: 100%;
     background-color: var(--primary-bg);
+    transform: skewX(-9deg);
+    transform-origin: top right;
   }
 
   .masthead-content {
@@ -37,11 +32,36 @@
   }
 
   .logo {
-    width: 70%;
+    width: 100%;
+    max-width: 250px;
   }
 }
 
-@media (min-width: 992px) {
+@include media-breakpoint-down(md) {
+  .landing-page {
+    background: url('../../assets/background.jpg') #019e55 no-repeat top
+      center;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .masthead {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    &:before {
+      transform: skewY(-9deg);
+      transform-origin: top right;
+    }
+
+    .masthead-content {
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
   .landing-page {
     background: url('../../assets/background.jpg') #019e55 no-repeat top right
       scroll;
@@ -51,7 +71,6 @@
 
   .masthead {
     height: 100%;
-    width: 60vw;
     min-height: 0;
     padding-bottom: 0;
 
@@ -69,7 +88,19 @@
   }
 }
 
-@media (min-width: 1200px) {
+@include media-breakpoint-up(md) {
+  .masthead {
+    width: 50vw;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .masthead {
+    width: 60vw;
+  }
+}
+
+@include media-breakpoint-up(xl) {
   .masthead {
     width: 65vw;
   }

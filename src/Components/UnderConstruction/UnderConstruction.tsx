@@ -14,7 +14,7 @@ const UnderConstruction = () => {
         belowLogo={
           <div className='row'>
             <div className='col'>
-              <p className='mb-5 text-center'>
+              <p className='text-center'>
                 ... {t('Site under construction')}
               </p>
             </div>
@@ -22,9 +22,8 @@ const UnderConstruction = () => {
         }
         aside={
           <div className={styles['social-icons']}>
-            <div className='d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0'>
+            <div>
               <a
-                className='m-1'
                 href={appSettings.facebookPageUrl}
                 target='_blank'
                 rel='noreferrer'

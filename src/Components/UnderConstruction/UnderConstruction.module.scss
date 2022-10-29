@@ -1,28 +1,28 @@
-@import '../../globals.scss';
+@import '../../index.scss';
 
 .under-construction {
   height: 100%;
 }
 
 .social-icons {
-  position: relative;
+  position: absolute;
+  right: .5rem;
+  bottom: 50%;
   z-index: 2;
 
   a {
-    color: var(--primary-btn);
+    color: var(--primary-bg);
 
     &:hover {
-      filter: brightness(0.9);
+      color: var(--primary-bg);
+      filter: brightness(0.8);
     }
   }
 }
 
-@media (min-width: 992px) {
+@include media-breakpoint-up(md) {
   .social-icons {
-    position: absolute;
-    height: 100%;
-    top: $navbar-height;
     right: 2.5rem;
-    width: auto;
+    bottom: 40%;
   }
 }

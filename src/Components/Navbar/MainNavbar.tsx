@@ -1,19 +1,20 @@
 import { useState, useEffect } from 'react';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import { useAppSelector } from '../../store/hooks';
 import LanguageSelector from '../Utils/LanguageSelector';
 import ThemeSwitcher from '../Utils/ThemeSwitcher';
 import styles from './MainNavbar.module.scss';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ThemeBasedAsset from '../Utils/ThemeBasedAsset';
+import logoSmallDark from '../../assets/logo_small_dark.png';
+import logoSmallLight from '../../assets/logo_small.png';
 
 type Props = {
   className?: string;
 };
 
 const MainNavbar: React.FC<Props> = (props) => {
-  const isDarkMode = useAppSelector((state) => state.ui.isDarkMode);
-
   const [offset, setOffset] = useState(0);
+  const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setOffset(window.pageYOffset);
@@ -22,28 +23,73 @@ const MainNavbar: React.FC<Props> = (props) => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const navItems = (
+    <ul className='navbar-nav'>
+      <li className='nav-item'>
+        <a href='/#about' className={`nav-link ${styles['nav-link']}`}>
+          About
+        </a>
+      </li>
+    </ul>
+  );
+
+  const isHiddenNavbar = offset < 56 && !isMobileMenuVisible;
+
+  const toggleMobileMenu = () => {
+    setMobileMenuVisible(!isMobileMenuVisible);
+  };
+
   return (
-    <Navbar
-      className={`${styles['main-navbar']} ${offset > 56 && styles['visible']}`}
-    >
-      <Container fluid>
-        <Navbar.Brand href='/'>
-          <img
-            src={require(`../../assets/${
-              isDarkMode ? 'logo_small_dark' : 'logo_small'
-            }.png`)}
-            width='100'
-            height='30'
-            className='d-inline-block align-top'
-            alt='Poczatek.info'
-          />
-        </Navbar.Brand>
-        <div className={`d-flex ${styles.controls}`}>
-          <ThemeSwitcher />
-          <LanguageSelector />
+    <>
+      <nav
+        className={`navbar justify-content-between ${styles['main-navbar']} ${
+          isHiddenNavbar && styles['hidden']
+        }`}
+      >
+        <div className='container-fluid navbar-expand-md justify-content-end'>
+          <a className='navbar-brand d-none d-md-flex' href='/'>
+            <ThemeBasedAsset
+              darkModeAsset={logoSmallDark}
+              lightModeAsset={logoSmallLight}
+              alt='Poczatek.info'
+              height={30}
+              width={100}
+              className='d-inline-block align-top'
+            />
+          </a>
+          <div className='collapse navbar-collapse d-none d-md-flex'>
+            {navItems}
+          </div>
+          <div className={`d-none d-md-flex ${styles.controls}`}>
+            <ThemeSwitcher />
+            <LanguageSelector />
+          </div>
+          <div
+            className={`btn d-md-none ${styles['mobile-menu-btn']}`}
+            onClick={toggleMobileMenu}
+          >
+            <FontAwesomeIcon className='d-md-none' icon={faBars} />
+          </div>
         </div>
-      </Container>
-    </Navbar>
+      </nav>
+      <div className={`d-flex d-md-none ${styles.controls}`}>
+        <ThemeSwitcher />
+        <LanguageSelector />
+      </div>
+      {isMobileMenuVisible && (
+        <div className={styles['mobile-menu']}>
+          <ThemeBasedAsset
+            darkModeAsset={logoSmallDark}
+            lightModeAsset={logoSmallLight}
+            alt='Poczatek.info'
+            height={30}
+            width={100}
+            className='align-self-start'
+          />
+          {navItems}
+        </div>
+      )}
+    </>
   );
 };
 
