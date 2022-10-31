@@ -60,6 +60,9 @@ const Footer: React.FC<{}> = () => {
               <li>
                 <a href='#about'>{t('Menu.About')}</a>
               </li>
+              <li>
+                <a href='#contact'>{t('Menu.Contact')}</a>
+              </li>
             </ul>
           </div>
           <div className='col-sm-6  col-md-4 col-lg-5  mt-5 mt-md-0'>
