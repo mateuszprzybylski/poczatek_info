@@ -1,5 +1,20 @@
 {
   "translation": {
-    "Site under construction": "site under construction"
+    "Site under construction": "site under construction",
+    "Menu": {
+      "Home": "Home",
+      "About": "About"
+    },
+    "About": {
+      "About content": "I deal with vehicle, house and flat, travel, accident insurance, companies, agricultural, corporate and individual insurance. The second branch of my specialization is loans - cash, mortgage, corporate and real estate - sales and sales assistance."
+    },
+    "Footer": {
+      "Menu": "Menu",
+      "Useful links": "Useful links",
+      "ING mortgage calculator": "ING mortgage calculator",
+      "Designed by": "Designed by",
+      "Copyright": "Copyright",
+      "All Rights Reserved": "All Rights Reserved"
+    }
   }
 }

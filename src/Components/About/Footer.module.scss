@@ -1,0 +1,18 @@
+.footer {
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+
+    a {
+        text-decoration: none;
+        color: var(--primary-text);
+
+        &:hover {
+            filter: brightness(0.7);
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+}

@@ -11,6 +11,7 @@ $navbar-height: 56px;
   --primary-text: #{$dark};
   --primary-btn: #{$light};
   --primary-bg: #{$light};
+  --secondary-bg: #fff;
 }
 
 [data-theme='dark'] {
@@ -19,4 +20,5 @@ $navbar-height: 56px;
   --primary-text: #{$light};
   --primary-btn: #{$dark};
   --primary-bg: #{$dark};
+  --secondary-bg: #353b43;
 }

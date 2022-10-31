@@ -1,5 +1,20 @@
 {
   "translation": {
-    "Site under construction": "strona w budowie"
+    "Site under construction": "strona w budowie",
+    "Menu": {
+      "Home": "Home",
+      "About": "O mnie"
+    },
+    "About": {
+      "About content": "Zajmuję się ubezpieczeniami pojazdów, domów i mieszkań, podróży, NNW, firm, rolnymi, korporacyjnymi oraz indywidualnymi. Drugą gałęzią mojej specjalizacji są kredyty - gotówkowe, hipoteczne, firmowe oraz nieruchomości - pomoc w zakupie i sprzedaży."
+    },
+    "Footer": {
+      "Menu": "Menu",
+      "Useful links": "Przydatne linki",
+      "ING mortgage calculator": "Kalkulator kredytu hipotecznego ING",
+      "Designed by": "Strona zaprojektowana przez",
+      "Copyright": "Prawa autorskie",
+      "All Rights Reserved": "Wszelkie prawa zastrzezone"
+    }
   }
 }

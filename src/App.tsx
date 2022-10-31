@@ -5,19 +5,21 @@ import { useAppSelector } from './store/hooks';
 import styles from './App.module.scss';
 import LandingPage from './Components/LandingPage/LandingPage';
 import About from './Components/About/About';
+import Footer from './Components/About/Footer';
 
 const App = () => {
   const isDarkMode = useAppSelector((state) => state.ui.isDarkMode);
 
   return (
     <div className={styles.app} data-theme={isDarkMode ? 'dark' : 'light'}>
-      <MainNavbar />
       {appSettings.isUnderConstrucionEnabled ? (
         <UnderConstruction />
       ) : (
         <>
-          <LandingPage />
+          <MainNavbar />
+          <LandingPage className={styles['landing-page']}/>
           <About />
+          <Footer />
         </>
       )}
     </div>

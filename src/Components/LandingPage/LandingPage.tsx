@@ -14,7 +14,7 @@ const LandingPage: React.FC<Props> = (props) => {
   const currentLanguage = i18n.languages[0];
 
   return (
-    <div className={styles['landing-page']}>
+    <div className={`${styles['landing-page']} ${props.className}`}>
       <div className={styles.masthead}>
         <div className={`${styles['masthead-content']}`}>
           <div className='container'>

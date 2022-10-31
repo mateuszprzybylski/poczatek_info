@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ThemeBasedAsset from '../Utils/ThemeBasedAsset';
 import logoSmallDark from '../../assets/logo_small_dark.png';
 import logoSmallLight from '../../assets/logo_small.png';
+import { useTranslation } from 'react-i18next';
 
 type Props = {
   className?: string;
@@ -15,6 +16,7 @@ type Props = {
 const MainNavbar: React.FC<Props> = (props) => {
   const [offset, setOffset] = useState(0);
   const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const onScroll = () => setOffset(window.pageYOffset);
@@ -23,11 +25,15 @@ const MainNavbar: React.FC<Props> = (props) => {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const handleMenuItemClick = () => {
+    setMobileMenuVisible(false);
+  }
+
   const navItems = (
     <ul className='navbar-nav'>
-      <li className='nav-item'>
+      <li className='nav-item' onClick={handleMenuItemClick}>
         <a href='/#about' className={`nav-link ${styles['nav-link']}`}>
-          About
+          {t('Menu.About')}
         </a>
       </li>
     </ul>
@@ -57,7 +63,7 @@ const MainNavbar: React.FC<Props> = (props) => {
               className='d-inline-block align-top'
             />
           </a>
-          <div className='collapse navbar-collapse d-none d-md-flex'>
+          <div className='collapse navbar-collapse justify-content-center d-none d-md-flex'>
             {navItems}
           </div>
           <div className={`d-none d-md-flex ${styles.controls}`}>

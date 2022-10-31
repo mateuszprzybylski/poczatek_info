@@ -1,12 +1,14 @@
-@import './index.scss';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins/_breakpoints';
+@import './globals';
 
-.app {
+.landing-page {
   position: relative;
-  top: -$navbar-height;
-}
 
-@include media-breakpoint-down(md) {
-  .app {
+  @include media-breakpoint-down(md) {
     top: 0;
   }
 }
+
+

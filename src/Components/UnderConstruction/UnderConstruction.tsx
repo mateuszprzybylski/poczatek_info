@@ -4,12 +4,18 @@ import styles from './UnderConstruction.module.scss';
 import { useTranslation } from 'react-i18next';
 import appSettings from '../../appSettings.json';
 import LandingPage from '../LandingPage/LandingPage';
+import ThemeSwitcher from '../Utils/ThemeSwitcher';
+import LanguageSelector from '../Utils/LanguageSelector';
 
 const UnderConstruction = () => {
   const { t } = useTranslation();
 
   return (
     <div className={styles['under-construction']}>
+      <div className={styles.controls}>
+        <ThemeSwitcher />
+        <LanguageSelector />
+      </div>
       <LandingPage
         belowLogo={
           <div className='row'>
