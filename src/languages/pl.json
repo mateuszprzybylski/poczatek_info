@@ -4,10 +4,18 @@
     "Menu": {
       "Home": "Home",
       "About": "O mnie",
+      "Partners": "Partnerzy",
       "Contact": "Kontakt"
     },
     "About": {
       "About content": "Zajmuję się ubezpieczeniami pojazdów, domów i mieszkań, podróży, NNW, firm, rolnymi, korporacyjnymi oraz indywidualnymi. Drugą gałęzią mojej specjalizacji są kredyty - gotówkowe, hipoteczne, firmowe oraz nieruchomości - pomoc w zakupie i sprzedaży."
+    },
+    "Partners": {
+      "Description": "Współpracuję z wiodocymi firmami ubezpieczeniowymi w Polsce i na świecie, aby jak najlepiej sprostać wymaganiom moich klientów"
+    },
+    "Contact": {
+      "Contact me on Whatsapp": "Napisz do mnie na Whatsapp",
+      "Contact me on Messenger": "Napisz do mnie na Messenger"
     },
     "Footer": {
       "Menu": "Menu",

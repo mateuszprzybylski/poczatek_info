@@ -22,3 +22,13 @@ $navbar-height: 56px;
   --primary-bg: #{$dark};
   --secondary-bg: #353b43;
 }
+
+a {
+  text-decoration: none;
+  color: var(--primary-text);
+
+  &:hover {
+    color: var(--primary-text);
+    filter: brightness(0.7);
+  }
+}

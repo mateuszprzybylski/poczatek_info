@@ -1,0 +1,17 @@
+.partners {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+
+  a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    transition: padding .2s;
+
+    &:hover {
+        padding: 0;
+    }
+  }
+}

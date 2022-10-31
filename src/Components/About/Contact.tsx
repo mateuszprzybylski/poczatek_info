@@ -1,6 +1,5 @@
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faMap } from '@fortawesome/free-regular-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookMessenger, faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
+import { faPhone, faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslation } from 'react-i18next';
 import { useAppSelector } from '../../store/hooks';
@@ -15,8 +14,8 @@ const Contact: React.FC<Props> = (props) => {
   const isDarkMode = useAppSelector((state) => state.ui.isDarkMode);
 
   return (
-    <section id='contact' className={`${styles.contact} pb-5`}>
-      <div className='container py-5 mb-5'>
+    <section id='contact' className={`${styles.contact}`}>
+      <div className='container pb-5'>
         <div className='row'>
           <div className='col'>
             <div className='my-5 pb-2'>
@@ -29,9 +28,9 @@ const Contact: React.FC<Props> = (props) => {
         <div className='row'>
           <div className='col-md-6 col-lg-4'>
             <a href=''>
-              <div className='d-flex align-items-center justify-content-md-center'>
+              <div className='d-flex align-items-center'>
                 <div className='pe-3'>
-                  <FontAwesomeIcon icon={faMap} size='4x' className='pr-3' />
+                  <FontAwesomeIcon icon={faLocationDot} size='2x' className='pr-3' />
                 </div>
                 <div>
                   Jedności Narodowej 160 m. 35
@@ -41,23 +40,43 @@ const Contact: React.FC<Props> = (props) => {
               </div>
             </a>
           </div>
-          <div className='col-md-6 col-lg-4  mt-5 mt-md-0'>
+          <div className='col-md-6 col-lg-4  mt-4 mt-md-0'>
             <a href='mailto: andrzej@poczatek.info'>
-              <div className='d-flex align-items-center justify-content-md-center'>
+              <div className='d-flex align-items-center'>
                 <div className='pe-3'>
-                  <FontAwesomeIcon icon={faEnvelope} size='4x' />
+                  <FontAwesomeIcon icon={faEnvelope} size='2x' />
                 </div>
                 <div>andrzej@poczatek.info</div>
               </div>
             </a>
           </div>
-          <div className='col-md-12 col-lg-4 mt-5 mt-lg-0'>
+          <div className='col-md-6 col-lg-4 mt-4 mt-lg-0'>
             <a href='tel:+48 790 444 771'>
-              <div className='d-flex align-items-center justify-content-md-center'>
+              <div className='d-flex align-items-center'>
                 <div className='pe-3'>
-                  <FontAwesomeIcon icon={faPhone} size='4x' />
+                  <FontAwesomeIcon icon={faPhone} size='2x' />
                 </div>
                 <div>+48 790 444 771</div>
+              </div>
+            </a>
+          </div>
+          <div className='col-md-6 col-lg-4 mt-4'>
+            <a href='https://wa.me/48790444771' target='_blank' rel='norefferer'>
+              <div className='d-flex align-items-center'>
+                <div className='pe-3'>
+                  <FontAwesomeIcon icon={faWhatsappSquare} size='2x' />
+                </div>
+                <div>{t('Contact.Contact me on Whatsapp')}</div>
+              </div>
+            </a>
+          </div>
+          <div className='col-md-6 col-lg-4 mt-4'>
+            <a href='https://m.me/poczatek.kredytu' target='_blank' rel='norefferer'>
+              <div className='d-flex align-items-center'>
+                <div className='pe-3'>
+                  <FontAwesomeIcon icon={faFacebookMessenger} size='2x' />
+                </div>
+                <div>{t('Contact.Contact me on Messenger')}</div>
               </div>
             </a>
           </div>
@@ -68,6 +87,7 @@ const Contact: React.FC<Props> = (props) => {
           src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40079.83231919437!2d17.024028973296357!3d51.10865352677091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c6a2bf2fbd%3A0x2645b68cd5acdf0c!2sJedno%C5%9Bci%20Narodowej%20160%2C%2050-302%20Wroc%C5%82aw%2C%20Poland!5e0!3m2!1sen!2suk!4v1667207631166!5m2!1sen!2suk'
           width='100%'
           height='600'
+          title='map'
           style={{
             border: 0,
             width: '100%',

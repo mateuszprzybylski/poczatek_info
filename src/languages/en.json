@@ -4,10 +4,18 @@
     "Menu": {
       "Home": "Home",
       "About": "About",
+      "Partners": "Partners",
       "Contact": "Contact"
     },
     "About": {
       "About content": "I deal with vehicle, house and flat, travel, accident insurance, companies, agricultural, corporate and individual insurance. The second branch of my specialization is loans - cash, mortgage, corporate and real estate - sales and sales assistance."
+    },
+    "Partners": {
+      "Description": "I work with leading insurance companies in Poland and around the world to best meet the requirements of my clients"
+    },
+    "Contact": {
+      "Contact me on Whatsapp": "Contact me on Whatsapp",
+      "Contact me on Messenger": "Contact me on Messenger"
     },
     "Footer": {
       "Menu": "Menu",
