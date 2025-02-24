@@ -8,7 +8,9 @@
       "Contact": "Contact"
     },
     "About": {
-      "About content": "I deal with vehicle, house and flat, travel, accident insurance, companies, agricultural, corporate and individual insurance. The second branch of my specialization is loans - cash, mortgage, corporate and real estate - sales and sales assistance."
+      "section1": "For over a dozen years I have been helping clients obtain <strong>mortgage loans</strong>, supporting them in the process of purchasing real estate and advising on <strong>insurance</strong> for apartments, houses and premises. My goal is to find the best financial solution, tailored to the individual needs and possibilities of each client.",
+      "section2": "I have been involved in the banking industry since 2006, which is why I have a thorough understanding of the procedures and requirements of financial institutions. My experience and knowledge allow me to effectively guide clients through the <strong>entire process – from the first consultation to the finalization of the transaction.</strong>",
+      "section3": "If you are looking for professional support in financial matters, please contact me. Together we will create a good start for your plans and dreams!"
     },
     "Partners": {
       "Description": "I work with leading insurance companies in Poland and around the world to best meet the requirements of my clients"
@@ -20,7 +22,7 @@
     "Footer": {
       "Menu": "Menu",
       "Useful links": "Useful links",
-      "ING mortgage calculator": "ING mortgage calculator",
+      "ING mortgage calculator": "Mortgage calculator",
       "Designed by": "Designed by",
       "Copyright": "Copyright",
       "All Rights Reserved": "All Rights Reserved"

@@ -73,7 +73,7 @@ const Footer: React.FC<{}> = () => {
             <ul>
               <li>
                 <a
-                  href='https://www.ing.pl/indywidualni/kredyty-i-pozyczki/kredyt-hipoteczny'
+                  href='https://www.infor.pl/kalkulatory/kredyty.html?fobosId=FOB0000000000000702547'
                   target='_blank'
                   rel='noreferrer'
                 >

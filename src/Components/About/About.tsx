@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+import { Trans, useTranslation } from 'react-i18next';
 import styles from './About.module.scss';
 
 type Props = {
@@ -14,11 +14,17 @@ const About: React.FC<Props> = (props) => {
         <div className='row justify-content-between'>
           <div className='col-md-8 offset-md-2 align-self-center'>
             <div>
-              <h2 className='text-center section-heading font-italic'>
-                {t('Menu.About')}
+              <h2 className='text-center section-heading font-italic mb-5'>
+                <Trans t={t} i18nKey='Menu.About'/>
               </h2>
               <p className='p-heading text-justify'>
-                {t('About.About content')}
+                <Trans t={t} i18nKey='About.section1'/>
+              </p>
+              <p className='p-heading text-justify'>
+               <Trans t={t} i18nKey='About.section2'/>
+              </p>
+              <p className='p-heading text-justify'>
+                <Trans t={t} i18nKey='About.section3'/>
               </p>
             </div>
           </div>

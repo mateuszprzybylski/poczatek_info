@@ -8,7 +8,9 @@
       "Contact": "Kontakt"
     },
     "About": {
-      "About content": "Zajmuję się ubezpieczeniami pojazdów, domów i mieszkań, podróży, NNW, firm, rolnymi, korporacyjnymi oraz indywidualnymi. Drugą gałęzią mojej specjalizacji są kredyty - gotówkowe, hipoteczne, firmowe oraz nieruchomości - pomoc w zakupie i sprzedaży."
+      "section1": "Od kilkunastu lat pomagam klientom w uzyskaniu <strong>kredytów hipotecznych</strong>, wspieram w procesie zakupu nieruchomości oraz doradzam w zakresie <strong>ubezpieczeń</strong> mieszkań, domów i lokali. Moim celem jest znalezienie najlepszego rozwiązania finansowego, dopasowanego do indywidualnych potrzeb i możliwości każdego klienta.",
+      "section2": "Z branżą bankową jestem związany od 2006 roku, dzięki czemu doskonale znam procedury i wymagania instytucji finansowych. Moje doświadczenie i wiedza pozwalają mi skutecznie przeprowadzać klientów przez <strong>cały proces – od pierwszej konsultacji, aż po finalizację transakcji</strong>.",
+      "section3": "Jeśli szukasz profesjonalnego wsparcia w sprawach finansowych, zapraszam do kontaktu. Razem stworzymy dobry początek dla Twoich planów i marzeń!"
     },
     "Partners": {
       "Description": "Współpracuję z wiodocymi firmami ubezpieczeniowymi w Polsce i na świecie, aby jak najlepiej sprostać wymaganiom moich klientów"
@@ -20,7 +22,7 @@
     "Footer": {
       "Menu": "Menu",
       "Useful links": "Przydatne linki",
-      "ING mortgage calculator": "Kalkulator kredytu hipotecznego ING",
+      "ING mortgage calculator": "Kalkulator kredytu hipotecznego",
       "Designed by": "Strona zaprojektowana przez",
       "Copyright": "Prawa autorskie",
       "All Rights Reserved": "Wszelkie prawa zastrzezone"
