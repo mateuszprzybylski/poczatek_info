@@ -12,7 +12,7 @@ const About: React.FC<Props> = (props) => {
     <section id='about' className={styles.about}>
       <div className='container py-5'>
         <div className='row justify-content-between'>
-          <div className='col-md-8 offset-md-2 align-self-center'>
+          <div className='col-lg-8 offset-lg-2 align-self-center'>
             <div>
               <h2 className='text-center section-heading font-italic mb-5'>
                 <Trans t={t} i18nKey='Menu.About'/>

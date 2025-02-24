@@ -32,3 +32,15 @@ a {
     filter: brightness(0.7);
   }
 }
+
+
+// bs overrides
+
+$accordion-color:  var(--primary-text);
+$accordion-bg: var(--secondary-bg);
+$accordion-icon-color: var(--primary-text);
+$accordion-icon-active-color: var(--primary-text);
+$accordion-button-active-bg: var(--primary-bg);
+$accordion-button-active-color: var(--primary-text);
+$accordion-button-focus-border-color: var(--primary-bg);
+$accordion-button-focus-box-shadow: 0;

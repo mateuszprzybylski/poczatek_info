@@ -27,15 +27,15 @@ const Contact: React.FC<Props> = (props) => {
         </div>
         <div className='row'>
           <div className='col-md-6 col-lg-4'>
-            <a href=''>
+            <a href='https://maps.app.goo.gl/gkhn6VFZx2JnyYmA8' target='_blank' rel='norefferer'>
               <div className='d-flex align-items-center'>
                 <div className='pe-3'>
                   <FontAwesomeIcon icon={faLocationDot} size='2x' className='pr-3' />
                 </div>
                 <div>
-                  Jedności Narodowej 160 m. 35
+                  Generała Romualda Traugutta 45
                   <br />
-                  50-218 Wrocław
+                  50-416 Wrocław
                 </div>
               </div>
             </a>
@@ -84,7 +84,7 @@ const Contact: React.FC<Props> = (props) => {
       </div>
       <div className={styles.map}>
         <iframe
-          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40079.83231919437!2d17.024028973296357!3d51.10865352677091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9c6a2bf2fbd%3A0x2645b68cd5acdf0c!2sJedno%C5%9Bci%20Narodowej%20160%2C%2050-302%20Wroc%C5%82aw%2C%20Poland!5e0!3m2!1sen!2suk!4v1667207631166!5m2!1sen!2suk'
+          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.1714897220713!2d17.042539289886058!3d51.105296067102124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fc2794bffc73b%3A0x504888e2d25154d0!2sGenera%C5%82a%20Romualda%20Traugutta%2045%2C%2050-416%20Wroc%C5%82aw%2C%20Poland!5e0!3m2!1sen!2suk!4v1740421161438!5m2!1sen!2suk'
           width='100%'
           height='600'
           title='map'

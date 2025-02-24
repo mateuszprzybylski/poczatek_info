@@ -29,9 +29,9 @@ const Footer: React.FC<{}> = () => {
               <p>
                 Andrzej Początek
                 <br />
-                Jedności Narodowej 160 m. 35
-                <br />
-                50-218 Wrocław
+                Generała Romualda Traugutta 45
+                <br />  
+                50-416 Wrocław
               </p>
               <p>
                 <a href='tel:+48 790 444 771'>+48 790 444 771</a>
@@ -61,7 +61,10 @@ const Footer: React.FC<{}> = () => {
                 <a href='#about'>{t('Menu.About')}</a>
               </li>
               <li>
-                <a href='#contact'>{t('Menu.Partners')}</a>
+                <a href='#partners'>{t('Menu.Partners')}</a>
+              </li>
+              <li>
+                <a href='#faq'>{t('Menu.Faq')}</a>
               </li>
               <li>
                 <a href='#contact'>{t('Menu.Contact')}</a>

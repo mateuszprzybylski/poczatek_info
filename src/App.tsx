@@ -6,6 +6,7 @@ import styles from './App.module.scss';
 import LandingPage from './Components/LandingPage/LandingPage';
 import About from './Components/About/About';
 import Footer from './Components/About/Footer';
+import Faq from './Components/About/Faq';
 import Contact from './Components/About/Contact';
 import Partners from './Components/About/Partners';
 
@@ -22,6 +23,7 @@ const App = () => {
           <LandingPage className={styles['landing-page']}/>
           <About />
           <Partners />
+          <Faq />
           <Contact />
           <Footer />
         </>

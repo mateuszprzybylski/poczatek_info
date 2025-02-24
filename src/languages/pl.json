@@ -5,6 +5,7 @@
       "Home": "Home",
       "About": "O mnie",
       "Partners": "Partnerzy",
+      "Faq": "Najczęsciej zadawane pytania",
       "Contact": "Kontakt"
     },
     "About": {
@@ -13,7 +14,49 @@
       "section3": "Jeśli szukasz profesjonalnego wsparcia w sprawach finansowych, zapraszam do kontaktu. Razem stworzymy dobry początek dla Twoich planów i marzeń!"
     },
     "Partners": {
-      "Description": "Współpracuję z wiodocymi firmami ubezpieczeniowymi w Polsce i na świecie, aby jak najlepiej sprostać wymaganiom moich klientów"
+      "Description": "Współpracuję z większością banków w Polsce w zakresie kredytów hipotecznych i gotówkowych, aby jak najlepiej sprostać wymaganiom moich klientów."
+    },
+    "Faq": {
+      "Question 1": {
+        "question": "Czy moje usługi są płatne?",
+        "answer": "Nie, moje usługi są bezpłatne dla klienta. Wynagrodzenie otrzymuję od banku, z którym podpiszesz umowę kredytową."
+      },
+      "Question 2": {
+        "question": "Jaką mam zdolność kredytową?",
+        "answer": "Zdolność kredytową obliczam na podstawie Twoich dochodów, wydatków, zobowiązań oraz historii kredytowej. Po analizie przedstawię Ci konkretne możliwości finansowania."
+      },
+      "Question 3": {
+        "question": "Który bank ma najlepszą ofertę kredytową?",
+        "answer": "To zależy od Twojej sytuacji finansowej i preferencji. Porównam oferty różnych banków, biorąc pod uwagę oprocentowanie, prowizje i warunki kredytu, aby znaleźć najlepszą opcję dla Ciebie."
+      },
+      "Question 4": {
+        "question": "Jakie dokumenty są potrzebne do wniosku o kredyt?",
+        "answer": "Zazwyczaj wymagane są dowód osobisty, zaświadczenie o dochodach, wyciągi bankowe oraz dokumenty dotyczące nieruchomości (w przypadku kredytu hipotecznego). Lista zależy od rodzaju kredytu i Twojej sytuacji."
+      },
+      "Question 5": {
+        "question": "Jak długo trwa proces uzyskania kredytu?",
+        "answer": "W zależności od banku i rodzaju kredytu proces może trwać od kilku dni (dla kredytów gotówkowych) do kilku tygodni (dla kredytów hipotecznych). Pomagam w jego przyspieszeniu, dbając o kompletność dokumentów."
+      },
+      "Question 6": {
+        "question": "Czy mogę dostać kredyt, jeśli mam umowę zlecenie/dzieło lub prowadzę działalność gospodarczą?",
+        "answer": "Tak, ale warunki mogą się różnić. W przypadku umów cywilnoprawnych lub działalności banki sprawdzają stabilność dochodów i wymagają określonego okresu zatrudnienia lub prowadzenia firmy."
+      },
+      "Question 7": {
+        "question": "Czy mogę wziąć kredyt, jeśli mam inne zobowiązania lub niską zdolność kredytową?",
+        "answer": "To zależy od wysokości Twoich aktualnych zobowiązań oraz dochodów. Możemy poszukać rozwiązania, np. konsolidacji kredytów lub poprawy zdolności kredytowej."
+      },
+      "Question 8": {
+        "question": "Czy lepiej wybrać kredyt ze stałym czy zmiennym oprocentowaniem?",
+        "answer": "Kredyt ze stałym oprocentowaniem daje pewność stałej raty, ale początkowo może być droższy. Zmienna stopa procentowa może oznaczać niższą ratę na początku, ale ryzyko jej wzrostu w przyszłości. Wybór zależy od Twojej skłonności do ryzyka i sytuacji na rynku."
+      },
+      "Question 9": {
+        "question": "Jakie są całkowite koszty kredytu, w tym prowizje i ubezpieczenia?",
+        "answer": "Koszt kredytu to nie tylko oprocentowanie, ale także prowizje, ubezpieczenia i inne opłaty. Pomogę Ci przeanalizować wszystkie koszty, abyś dokładnie wiedział, ile zapłacisz."
+      },
+      "Question 10": {
+        "question": "Czy mogę spłacić kredyt wcześniej bez dodatkowych kosztów?",
+        "answer": "Wiele banków pozwala na wcześniejszą spłatę kredytu, choć niektóre mogą pobierać prowizję. Sprawdzę warunki w poszczególnych bankach i doradzę najkorzystniejsze rozwiązanie."
+      }
     },
     "Contact": {
       "Contact me on Whatsapp": "Napisz do mnie na Whatsapp",

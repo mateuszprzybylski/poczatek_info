@@ -5,6 +5,7 @@
       "Home": "Home",
       "About": "About",
       "Partners": "Partners",
+      "Faq": "FAQ",
       "Contact": "Contact"
     },
     "About": {
@@ -13,7 +14,49 @@
       "section3": "If you are looking for professional support in financial matters, please contact me. Together we will create a good start for your plans and dreams!"
     },
     "Partners": {
-      "Description": "I work with leading insurance companies in Poland and around the world to best meet the requirements of my clients"
+      "Description": "I cooperate with the majority of banks in Poland in the field of mortgage and cash loans to best meet the needs of my clients."
+    },
+    "Faq": {
+      "Question 1": {
+        "question": "Are my services paid?",
+        "answer": "No, my services are free for the client. I receive remuneration from the bank with which you sign a loan agreement."
+      },
+      "Question 2": {
+        "question": "What is my creditworthiness?",
+        "answer": "I calculate my creditworthiness based on your income, expenses, liabilities and credit history. After analysis, I will present you with specific financing options."
+      },
+      "Question 3": {
+        "question": "Which bank has the best loan offer?",
+        "answer": "It depends on your financial situation and preferences. I will compare offers from different banks, taking into account interest rates, fees and loan conditions to find the best option for you."
+      },
+      "Question 4": {
+        "question": "What documents are needed to apply for a loan?",
+        "answer": "Usually, an ID card, proof of income, bank statements and documents regarding the property (in the case of a mortgage) are required. The list depends on the type of loan and your situation."
+      },
+      "Question 5": {
+        "question": "How long does the process of obtaining a loan take?",
+        "answer": "Depending on the bank and the type of loan, the process can take from several days (for cash loans) to several weeks (for mortgage loans). I help speed it up by ensuring that the documents are complete."
+      },
+      "Question 6": {
+        "question": "Can I get a loan if I have a contract for specific work or run a business?",
+        "answer": "Yes, but the conditions may vary. In the case of civil law contracts or business, banks check the stability of income and require a specific period of employment or running a business."
+      },
+      "Question 7": {
+        "question": "Can I take a loan if I have other liabilities or low creditworthiness?",
+        "answer": "It depends on the amount of your current liabilities and income. We can look for a solution, e.g. loan consolidation or improving creditworthiness."
+      },
+      "Question 8": {
+        "question": "Is it better to choose a loan with a fixed or variable interest rate?",
+        "answer": "A loan with a fixed interest rate gives you the certainty of a fixed installment, but it may be more expensive initially. A variable interest rate may mean a lower installment at the beginning, but the risk of it increasing in the future. The choice depends on your risk appetite and the market situation."
+      },
+      "Question 9": {
+        "question": "What are the total costs of the loan, including commissions and insurance?",
+        "answer": "The cost of the loan is not only the interest rate, but also commissions, insurance and other fees. I will help you analyze all the costs so you know exactly how much you will pay."
+      },
+      "Question 10": {
+        "question": "Can I repay my loan early without additional costs?",
+        "answer": "Many banks allow early repayment of loans, although some may charge a fee. I will check the conditions at individual banks and advise on the most favorable solution."
+      }
     },
     "Contact": {
       "Contact me on Whatsapp": "Contact me on Whatsapp",
