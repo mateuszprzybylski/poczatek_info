@@ -42,6 +42,11 @@ const MainNavbar: React.FC<Props> = (props) => {
         </a>
       </li>
       <li className='nav-item' onClick={handleMenuItemClick}>
+        <a href='/#faq' className={`nav-link ${styles['nav-link']}`}>
+          {t('Menu.Faq')}
+        </a>
+      </li>
+      <li className='nav-item' onClick={handleMenuItemClick}>
         <a href='/#contact' className={`nav-link ${styles['nav-link']}`}>
           {t('Menu.Contact')}
         </a>

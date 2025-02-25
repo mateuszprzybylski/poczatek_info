@@ -29,9 +29,11 @@ const Footer: React.FC<{}> = () => {
               <p>
                 Andrzej Początek
                 <br />
-                Generała Romualda Traugutta 45
-                <br />  
-                50-416 Wrocław
+                <a href='https://maps.app.goo.gl/gkhn6VFZx2JnyYmA8' target='_blank' rel='norefferer'>
+                  Generała Romualda Traugutta 45
+                  <br />  
+                  50-416 Wrocław
+                </a>
               </p>
               <p>
                 <a href='tel:+48 790 444 771'>+48 790 444 771</a>

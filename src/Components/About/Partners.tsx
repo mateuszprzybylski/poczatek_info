@@ -2,10 +2,10 @@ import { useTranslation } from 'react-i18next';
 import styles from './Partners.module.scss';
 
 import alior from '../../assets/banks/alior.jpg';
-import bnp from '../../assets/banks/bnp.png';
-import bos from '../../assets/banks/bos.png';
-import bps from '../../assets/banks/bps.png';
-import bsBrodnica from '../../assets/banks/bs-brodnica.png';
+import bnp from '../../assets/banks/bnp.jpg';
+import bos from '../../assets/banks/bos.jpg';
+import bps from '../../assets/banks/bps.jpg';
+import bsBrodnica from '../../assets/banks/bs-brodnica.jpg';
 import city from '../../assets/banks/city-handlowy.jpg';
 import ing from '../../assets/banks/ing.jpg';
 import mbank from '../../assets/banks/mbank.jpg';
@@ -15,7 +15,7 @@ import pko from '../../assets/banks/pko.jpg';
 import pocztowy from '../../assets/banks/pocztowy.jpg';
 import santander from '../../assets/banks/santander.jpg';
 import sbr from '../../assets/banks/sbr.jpg';
-import velo from '../../assets/banks/velo.png';
+import velo from '../../assets/banks/velo.jpg';
 
 
 type Props = {

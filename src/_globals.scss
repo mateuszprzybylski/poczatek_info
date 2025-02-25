@@ -12,6 +12,7 @@ $navbar-height: 56px;
   --primary-btn: #{$light};
   --primary-bg: #{$light};
   --secondary-bg: #fff;
+  --link-hover: #{$primary};
 }
 
 [data-theme='dark'] {
@@ -21,14 +22,16 @@ $navbar-height: 56px;
   --primary-btn: #{$dark};
   --primary-bg: #{$dark};
   --secondary-bg: #353b43;
+  --link-hover: #{$light};
 }
 
 a {
   text-decoration: none;
   color: var(--primary-text);
 
-  &:hover {
-    color: var(--primary-text);
+  div:hover, &:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
     filter: brightness(0.7);
   }
 }
@@ -38,9 +41,9 @@ a {
 
 $accordion-color:  var(--primary-text);
 $accordion-bg: var(--secondary-bg);
-$accordion-icon-color: var(--primary-text);
-$accordion-icon-active-color: var(--primary-text);
 $accordion-button-active-bg: var(--primary-bg);
+$accordion-icon-color: #dee2e6;
+$accordion-icon-active-color: #dee2e6;
 $accordion-button-active-color: var(--primary-text);
 $accordion-button-focus-border-color: var(--primary-bg);
 $accordion-button-focus-box-shadow: 0;
