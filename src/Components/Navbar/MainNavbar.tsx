@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import LanguageSelector from '../Utils/LanguageSelector';
 import ThemeSwitcher from '../Utils/ThemeSwitcher';
 import styles from './MainNavbar.module.scss';
@@ -15,16 +15,8 @@ type Props = {
 };
 
 const MainNavbar: React.FC<Props> = (props) => {
-  const [offset, setOffset] = useState(0);
   const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
   const { t } = useTranslation();
-
-  useEffect(() => {
-    const onScroll = () => setOffset(window.pageYOffset);
-    window.removeEventListener('scroll', onScroll);
-    window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, []);
 
   const handleMenuItemClick = () => {
     setMobileMenuVisible(false);
@@ -60,7 +52,7 @@ const MainNavbar: React.FC<Props> = (props) => {
     </ul>
   );
 
-  const isHiddenNavbar = offset < 56 && !isMobileMenuVisible;
+  const isHiddenNavbar = false && !isMobileMenuVisible;
 
   const toggleMobileMenu = () => {
     setMobileMenuVisible(!isMobileMenuVisible);
