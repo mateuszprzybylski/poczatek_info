@@ -29,7 +29,9 @@ const LandingPage: React.FC<Props> = (props) => {
                 />
               </div>
             </div>
-            {props.belowLogo}
+            <div className='text-center'>
+              {props.belowLogo}
+            </div>
           </div>
         </div>
       </div>

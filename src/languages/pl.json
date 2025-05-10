@@ -4,6 +4,7 @@
     "Menu": {
       "Home": "Home",
       "About": "O mnie",
+      "Benefits" : "Korzyści",
       "Partners": "Partnerzy",
       "Faq": "FAQ",
       "Contact": "Kontakt"
@@ -11,7 +12,47 @@
     "About": {
       "section1": "Od kilkunastu lat pomagam klientom w uzyskaniu <strong>kredytów hipotecznych</strong>, wspieram w procesie zakupu nieruchomości oraz doradzam w zakresie <strong>ubezpieczeń</strong> mieszkań, domów i lokali. Moim celem jest znalezienie najlepszego rozwiązania finansowego, dopasowanego do indywidualnych potrzeb i możliwości każdego klienta.",
       "section2": "Z branżą bankową jestem związany od 2006 roku, dzięki czemu doskonale znam procedury i wymagania instytucji finansowych. Moje doświadczenie i wiedza pozwalają mi skutecznie przeprowadzać klientów przez <strong>cały proces – od pierwszej konsultacji, aż po finalizację transakcji</strong>.",
-      "section3": "Jeśli szukasz profesjonalnego wsparcia w sprawach finansowych, zapraszam do kontaktu. Razem stworzymy dobry początek dla Twoich planów i marzeń!"
+      "section3": "Jeśli szukasz profesjonalnego wsparcia w sprawach finansowych, zapraszam do kontaktu. Razem stworzymy dobry początek dla Twoich planów i marzeń!",
+      "summary": {
+        "experience": {
+          "title": "19",
+          "subtitle": "lat doświadczenia",
+          "description": "Działam w branży od 2006 roku"
+        },
+        "loans": {
+          "title": "460",
+          "subtitle": "kredytów hipotecznych",
+          "description": "Liczba udzielonych kredytowych hipotecznych"
+        },
+        "rate": {
+          "title": "96%",
+          "subtitle": "skuteczności",
+          "description": "Procent pozytywnie rozpatrzonych wniosków kredytowych"
+        }
+      }
+    },
+    "Benefits": {
+      "Description": "Z branżą bankową jestem związany od 2006 roku, dzięki czemu doskonale znam procedury i wymagania instytucji finansowych. Moje doświadczenie i wiedza pozwalają mi skutecznie przeprowadzać klientów przez <strong>cały proces – od pierwszej konsultacji, aż po finalizację transakcji</strong>.",
+      "section1": {
+        "title": "Profesjonalne wsparcie",
+        "description": "Pomogę Ci wybrać najlepszą ofertę kredytową i przygotować wszystkie niezbędne dokumenty."
+      },
+      "section2": {
+        "title": "Oszczędność czasu",
+        "description": "Zajmę się wszystkimi formalnościami, abyś mógł skupić się na swoich planach."
+      },
+      "section3": {
+        "title": "Lepsze warunki kredytowe",
+        "description": "Dzięki mojej wiedzy i współpracy z bankami możesz uzyskać korzystniejszą ofertę."
+      },
+      "section4": {
+        "title": "Bez stresu",
+        "description": "Poprowadzę Cię przez cały proces, unikając błędów formalnych i zbędnego stresu."
+      },
+      "section5": {
+        "title": "Bezpłatna usługa",
+        "description": "Moje usługi są bezpłatne dla klienta. Wynagrodzenie otrzymuję od banku, z którym podpiszesz umowę kredytową."
+      }
     },
     "Partners": {
       "Description": "Współpracuję z większością banków w Polsce w zakresie kredytów hipotecznych i gotówkowych, aby jak najlepiej sprostać wymaganiom moich klientów."

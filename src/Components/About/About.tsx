@@ -27,6 +27,29 @@ const About: React.FC<Props> = (props) => {
                 <Trans t={t} i18nKey='About.section3'/>
               </p>
             </div>
+            <div className='row justify-content-between'>
+              <div className='col-sm-4 text-center mt-4'>
+                <div className={styles.feature}>
+                  <div className={styles.title}>{t('About.summary.experience.title')}</div>
+                  <div className={styles.subtitle}>{t('About.summary.experience.subtitle')}</div>
+                  <div className={styles.description}>{t('About.summary.experience.description')}</div>
+                </div>      
+              </div>
+              <div className='col-sm-4 text-center mt-4'>
+                <div className={styles.feature}>
+                <div className={styles.title}>{t('About.summary.loans.title')}</div>
+                  <div className={styles.subtitle}>{t('About.summary.loans.subtitle')}</div>
+                  <div className={styles.description}>{t('About.summary.loans.description')}</div>
+                </div>      
+              </div>
+              <div className='col-sm-4 text-center mt-4'>
+                <div className={styles.feature}>
+                  <div className={styles.title}>{t('About.summary.rate.title')}</div>
+                  <div className={styles.subtitle}>{t('About.summary.rate.subtitle')}</div>
+                  <div className={styles.description}>{t('About.summary.rate.description')}</div>
+                </div>      
+              </div>
+            </div>
           </div>
         </div>
       </div>

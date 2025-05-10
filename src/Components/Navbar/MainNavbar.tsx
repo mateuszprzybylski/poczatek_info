@@ -8,6 +8,7 @@ import ThemeBasedAsset from '../Utils/ThemeBasedAsset';
 import logoSmallDark from '../../assets/logo_small_dark.png';
 import logoSmallLight from '../../assets/logo_small.png';
 import { useTranslation } from 'react-i18next';
+import ContactInfo from '../ContactInfo/ContactInfo';
 
 type Props = {
   className?: string;
@@ -34,6 +35,11 @@ const MainNavbar: React.FC<Props> = (props) => {
       <li className='nav-item' onClick={handleMenuItemClick}>
         <a href='/#about' className={`nav-link ${styles['nav-link']}`}>
           {t('Menu.About')}
+        </a>
+      </li>
+      <li className='nav-item' onClick={handleMenuItemClick}>
+        <a href='/#benefits' className={`nav-link ${styles['nav-link']}`}>
+          {t('Menu.Benefits')}
         </a>
       </li>
       <li className='nav-item' onClick={handleMenuItemClick}>
@@ -92,6 +98,7 @@ const MainNavbar: React.FC<Props> = (props) => {
             <FontAwesomeIcon className='d-md-none' icon={faBars} />
           </div>
         </div>
+        
       </nav>
       <div className={`d-flex d-md-none ${styles.controls}`}>
         <ThemeSwitcher />
@@ -108,6 +115,7 @@ const MainNavbar: React.FC<Props> = (props) => {
             className='align-self-start'
           />
           {navItems}
+          <ContactInfo />
         </div>
       )}
     </>

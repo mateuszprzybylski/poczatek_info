@@ -9,6 +9,8 @@ import Footer from './Components/About/Footer';
 import Faq from './Components/About/Faq';
 import Contact from './Components/About/Contact';
 import Partners from './Components/About/Partners';
+import Benefits from './Components/About/Benefits';
+import ContactInfo from './Components/ContactInfo/ContactInfo';
 
 const App = () => {
   const isDarkMode = useAppSelector((state) => state.ui.isDarkMode);
@@ -20,8 +22,9 @@ const App = () => {
       ) : (
         <>
           <MainNavbar />
-          <LandingPage className={styles['landing-page']}/>
+          <LandingPage className={styles['landing-page']} belowLogo={<ContactInfo />}/>
           <About />
+          <Benefits />
           <Partners />
           <Faq />
           <Contact />

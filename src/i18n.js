@@ -4,6 +4,7 @@ import { initReactI18next } from "react-i18next";
 import detectorOptions from "./languageDetectorOptions";
 import en from './languages/en.json';
 import pl from './languages/pl.json';
+import uk from './languages/uk.json';
 
 // the translations
 // (tip move them in a JSON file and import them,
@@ -11,6 +12,7 @@ import pl from './languages/pl.json';
 const resources = {
   en: en,
   pl: pl,
+  uk: uk
 };
 
 i18n

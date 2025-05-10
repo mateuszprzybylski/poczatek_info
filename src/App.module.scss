@@ -3,6 +3,20 @@
 @import '~bootstrap/scss/mixins/_breakpoints';
 @import './globals';
 
+.app {
+  section {
+    color: var(--primary-text);
+  }
+
+  section:nth-child(even) {
+    background-color: var(--secondary-bg);
+  }
+
+  section:nth-child(odd) {
+    background-color: var(--primary-bg);
+  }
+}
+
 .landing-page {
   position: relative;
 

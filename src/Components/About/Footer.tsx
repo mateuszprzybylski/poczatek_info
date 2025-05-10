@@ -3,9 +3,7 @@ import ThemeBasedAsset from '../Utils/ThemeBasedAsset';
 import logoSmallDark from '../../assets/logo_small_dark.png';
 import logoSmallLight from '../../assets/logo_small.png';
 import styles from './Footer.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook } from '@fortawesome/free-brands-svg-icons';
-import appSettings from '../../appSettings.json';
+import ContactInfo from '../ContactInfo/ContactInfo';
 
 const Footer: React.FC<{}> = () => {
   const { t } = useTranslation();
@@ -29,28 +27,13 @@ const Footer: React.FC<{}> = () => {
               <p>
                 Andrzej Początek
                 <br />
-                <a href='https://maps.app.goo.gl/gkhn6VFZx2JnyYmA8' target='_blank' rel='norefferer'>
+                <a href='https://maps.app.goo.gl/gkhn6VFZx2JnyYmA8' target='_blank' rel="noreferrer">
                   Generała Romualda Traugutta 45
                   <br />  
                   50-416 Wrocław
                 </a>
               </p>
-              <p>
-                <a href='tel:+48 790 444 771'>+48 790 444 771</a>
-                <br />
-                <a href='mailto: andrzej@poczatek.info'>
-                  andrzej@poczatek.info
-                </a>
-                <br />
-                <br />
-                <a
-                  href={appSettings.facebookPageUrl}
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  <FontAwesomeIcon icon={faFacebook} size='2x' />
-                </a>
-              </p>
+              <ContactInfo showFacebookIcon={true} />
             </div>
           </div>
           <div className='col-sm-6 col-md-3 col-lg-3 mt-5 mt-sm-0'>
