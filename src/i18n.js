@@ -27,11 +27,28 @@ i18n
     detection: detectorOptions,
   });
 
-// Function to change language and redirect
+export const supportedLanguages = Object.keys(resources);
+
+export const defaultLanguage = 'en'
+
 export const changeLanguageAndRedirect = (language) => {
-  i18n.changeLanguage(language).then(() => {
-    window.location.pathname = `/${language}`;
-  });
+  if (supportedLanguages.includes(language)) {
+    i18n.changeLanguage(language).then(() => {
+      window.location.pathname = `/${language}`;
+    });
+  } else {
+    window.location.pathname = `/`;
+  }
 };
+
+export const getCurrentLanguage = () => {
+  const language = i18n.languages[0];
+
+  if (supportedLanguages.includes(language)) {
+    return language
+  } else {
+    return defaultLanguage
+  }
+}
 
 export default i18n;

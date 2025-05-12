@@ -1,22 +1,11 @@
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 
-RewriteCond %{HTTP_HOST} ^www\.poczatek\.info$
-RewriteRule ^/?$ "http\:\/\/poczatek\.info\/" [R=301,L]
-
 # Jeśli aplikacja działa na HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://poczatek.info/$1 [R=301,L]
 
-# Obsługuje wszelkie żądania, np. /uk, /en, /pl
-RewriteCond %{REQUEST_URI} ^/(uk|en|pl) [NC]
-RewriteRule ^(.*)$ /index.html [L]
-
-# Jeśli ścieżka nie jest /pl, /en, /uk, przekieruj na stronę główną (/)
-RewriteCond %{REQUEST_URI} !^/(uk|en|pl) [NC]
-RewriteRule ^ / [R=301,L]
-
-# Obsługujemy inne ścieżki w aplikacji React (jeśli są przekierowywane na index.html)
+# Przekierowanie wszystkich żądań na index.html, jeśli plik lub katalog nie istnieje
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [QSA,L]

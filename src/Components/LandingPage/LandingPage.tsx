@@ -1,6 +1,7 @@
 import styles from './LandingPage.module.scss';
 import { useTranslation } from 'react-i18next';
 import { useAppSelector } from '../../store/hooks';
+import { getCurrentLanguage } from '../../i18n';
 
 type Props = {
   className?: string;
@@ -9,9 +10,8 @@ type Props = {
 };
 
 const LandingPage: React.FC<Props> = (props) => {
-  const { i18n } = useTranslation();
   const isDarkMode = useAppSelector((state) => state.ui.isDarkMode);
-  const currentLanguage = i18n.languages[0];
+  const currentLanguage = getCurrentLanguage()
 
   return (
     <div className={`${styles['landing-page']} ${props.className}`}>

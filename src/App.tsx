@@ -11,10 +11,22 @@ import Contact from './Components/About/Contact';
 import Partners from './Components/About/Partners';
 import Benefits from './Components/About/Benefits';
 import ContactInfo from './Components/ContactInfo/ContactInfo';
+import { useEffect } from 'react';
+import i18n, { supportedLanguages, defaultLanguage } from './i18n';
 
 const App = () => {
   const isDarkMode = useAppSelector((state) => state.ui.isDarkMode);
 
+  useEffect(() => {
+    const pathLanguage = window.location.pathname.split('/')[1];
+
+    if (supportedLanguages.includes(pathLanguage)) {
+      i18n.changeLanguage(pathLanguage);
+    } else {
+      i18n.changeLanguage(defaultLanguage);
+    }
+  }, []);
+  
   return (
     <div className={styles.app} data-theme={isDarkMode ? 'dark' : 'light'}>
       {appSettings.isUnderConstrucionEnabled ? (
