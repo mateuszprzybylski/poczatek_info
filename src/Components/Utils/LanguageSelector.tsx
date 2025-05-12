@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { ChangeEvent, ChangeEventHandler } from 'react';
 import styles from './LanguageSelector.module.scss';
+import { changeLanguageAndRedirect } from '../../i18n';
 
 type Props = {
   className?: string;
@@ -14,7 +15,7 @@ const LanguageSelector: React.FC<Props> = (props) => {
   const handleOnSelect: ChangeEventHandler<HTMLSelectElement> = (
     event: ChangeEvent<HTMLSelectElement>
   ) => {
-    i18n.changeLanguage(event.target.value);
+    changeLanguageAndRedirect(event.target.value);
   };
 
   return (

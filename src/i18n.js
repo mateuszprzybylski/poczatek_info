@@ -27,4 +27,11 @@ i18n
     detection: detectorOptions,
   });
 
+// Function to change language and redirect
+export const changeLanguageAndRedirect = (language) => {
+  i18n.changeLanguage(language).then(() => {
+    window.location.pathname = `/${language}`;
+  });
+};
+
 export default i18n;
