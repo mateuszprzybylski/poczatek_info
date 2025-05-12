@@ -46,6 +46,9 @@ const Footer: React.FC<{}> = () => {
                 <a href='#about'>{t('Menu.About')}</a>
               </li>
               <li>
+                <a href='#benefits'>{t('Menu.Benefits')}</a>
+              </li>
+              <li>
                 <a href='#partners'>{t('Menu.Partners')}</a>
               </li>
               <li>

@@ -15,8 +15,6 @@ const Faq: React.FC<Props> = (props) => {
   const { t } = useTranslation();
   const faqEntries = t("Faq", { returnObjects: true }) as Map<string, FaqEntry>
 
-  console.log(faqEntries)
-
   return (
     <section id='faq' className={styles.faq}>
       <div className='container py-5'>
