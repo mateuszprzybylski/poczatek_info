@@ -37,7 +37,7 @@ const Benefits: React.FC<Props> = (props) => {
                 <FontAwesomeIcon icon={faUserTie} size='2x' />
               </div>
               <div className='col-10'>
-                <h5><b>{t('Benefits.section1.title')}</b></h5>
+                <h3><b>{t('Benefits.section1.title')}</b></h3>
                 <p>{t('Benefits.section1.description')}</p>
               </div>
             </div>
@@ -46,7 +46,7 @@ const Benefits: React.FC<Props> = (props) => {
                 <FontAwesomeIcon icon={faClock} size='2x' />
               </div>
               <div className='col-10'>
-              <h5><b>{t('Benefits.section2.title')}</b></h5>
+              <h3><b>{t('Benefits.section2.title')}</b></h3>
               <p>{t('Benefits.section2.description')}</p>
               </div>
             </div>
@@ -55,7 +55,7 @@ const Benefits: React.FC<Props> = (props) => {
                 <FontAwesomeIcon icon={faCoins} size='2x' />
               </div>
               <div className='col-10'>
-                <h5><b>{t('Benefits.section3.title')}</b></h5>
+                <h3><b>{t('Benefits.section3.title')}</b></h3>
                 <p>{t('Benefits.section3.description')}</p>
               </div>
             </div>
@@ -64,7 +64,7 @@ const Benefits: React.FC<Props> = (props) => {
                 <FontAwesomeIcon icon={faThumbsUp} size='2x' />
               </div>
               <div className='col-10'>
-                <h5><b>{t('Benefits.section4.title')}</b></h5>
+                <h3><b>{t('Benefits.section4.title')}</b></h3>
                 <p>{t('Benefits.section4.description')}</p>
               </div>
             </div>
@@ -73,7 +73,7 @@ const Benefits: React.FC<Props> = (props) => {
                 <FontAwesomeIcon icon={faHandshake} size='2x' />
               </div>
               <div className='col-10'>
-                <h5><b>{t('Benefits.section5.title')}</b></h5>
+                <h3><b>{t('Benefits.section5.title')}</b></h3>
                 <p>{t('Benefits.section5.description')}</p>
               </div>
             </div>

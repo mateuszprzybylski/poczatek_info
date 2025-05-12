@@ -37,7 +37,7 @@ const Footer: React.FC<{}> = () => {
             </div>
           </div>
           <div className='col-sm-6 col-md-3 col-lg-3 mt-5 mt-sm-0'>
-            <h5 className='mb-4'>{t('Footer.Menu')}</h5>
+            <h3 className='mb-4'>{t('Footer.Menu')}</h3>
             <ul>
               <li>
                 <a href='#'>{t('Menu.Home')}</a>
@@ -60,7 +60,7 @@ const Footer: React.FC<{}> = () => {
             </ul>
           </div>
           <div className='col-sm-6  col-md-4 col-lg-5  mt-5 mt-md-0'>
-            <h5 className='mb-4'>{t('Footer.Useful links')}</h5>
+            <h3 className='mb-4'>{t('Footer.Useful links')}</h3>
             <ul>
               <li>
                 <a

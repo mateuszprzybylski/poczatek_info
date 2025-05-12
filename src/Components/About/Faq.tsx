@@ -28,7 +28,7 @@ const Faq: React.FC<Props> = (props) => {
               <Accordion defaultActiveKey="0">
               {Object.values(faqEntries).map((entry, index) => (
                 <Accordion.Item eventKey={index.toString()} key={index}>
-                <Accordion.Header>{entry.question}</Accordion.Header>
+                <Accordion.Header as="h3">{entry.question}</Accordion.Header>
                 <Accordion.Body>
                 {entry.answer}
                 </Accordion.Body>

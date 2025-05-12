@@ -10,6 +10,7 @@ type Props = {
 };
 
 const LandingPage: React.FC<Props> = (props) => {
+  const { t } = useTranslation();
   const isDarkMode = useAppSelector((state) => state.ui.isDarkMode);
   const currentLanguage = getCurrentLanguage()
 
@@ -20,12 +21,13 @@ const LandingPage: React.FC<Props> = (props) => {
           <div className='container'>
             <div className='row'>
               <div className='col'>
+                <h1 className='d-none'>{t('LandingPage.header')}</h1>
                 <img
                   className={`${styles.logo} d-block mx-auto mb-4`}
                   src={require(`../../assets/${currentLanguage}/${
                     isDarkMode ? 'logo_dark' : 'logo'
                   }.webp`)}
-                  alt='logo'
+                  alt={t('LandingPage.header')}
                 />
               </div>
             </div>
