@@ -24,7 +24,7 @@ const LandingPage: React.FC<Props> = (props) => {
                   className={`${styles.logo} d-block mx-auto mb-4`}
                   src={require(`../../assets/${currentLanguage}/${
                     isDarkMode ? 'logo_dark' : 'logo'
-                  }.png`)}
+                  }.webp`)}
                   alt='logo'
                 />
               </div>

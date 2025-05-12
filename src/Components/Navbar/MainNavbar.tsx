@@ -5,8 +5,8 @@ import styles from './MainNavbar.module.scss';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ThemeBasedAsset from '../Utils/ThemeBasedAsset';
-import logoSmallDark from '../../assets/logo_small_dark.png';
-import logoSmallLight from '../../assets/logo_small.png';
+import logoSmallDark from '../../assets/logo_small_dark.webp';
+import logoSmallLight from '../../assets/logo_small.webp';
 import { useTranslation } from 'react-i18next';
 import ContactInfo from '../ContactInfo/ContactInfo';
 

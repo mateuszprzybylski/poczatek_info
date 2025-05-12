@@ -42,7 +42,7 @@
 
 @include media-breakpoint-down(md) {
   .landing-page {
-    background: url('../../assets/background-mobile.jpg') #019e55 no-repeat top
+    background: url('../../assets/background-mobile.webp') #019e55 no-repeat top
       center;
     background-size: cover;
     height: 100vh;
@@ -66,7 +66,7 @@
 
 @include media-breakpoint-up(md) {
   .landing-page {
-    background: url('../../assets/background.jpg') #019e55 no-repeat top right
+    background: url('../../assets/background.webp') #019e55 no-repeat top right
       scroll;
     background-size: contain;
     height: 100%;

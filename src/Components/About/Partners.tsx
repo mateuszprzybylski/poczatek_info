@@ -1,21 +1,21 @@
 import { useTranslation } from 'react-i18next';
 import styles from './Partners.module.scss';
 
-import alior from '../../assets/banks/alior.jpg';
-import bnp from '../../assets/banks/bnp.jpg';
-import bos from '../../assets/banks/bos.jpg';
-import bps from '../../assets/banks/bps.jpg';
-import bsBrodnica from '../../assets/banks/bs-brodnica.jpg';
-import city from '../../assets/banks/city-handlowy.jpg';
-import ing from '../../assets/banks/ing.jpg';
-import mbank from '../../assets/banks/mbank.jpg';
-import millenium from '../../assets/banks/millenium.jpg';
-import pekao from '../../assets/banks/pekao.jpg';
-import pko from '../../assets/banks/pko.jpg';
-import pocztowy from '../../assets/banks/pocztowy.jpg';
-import santander from '../../assets/banks/santander.jpg';
-import sbr from '../../assets/banks/sbr.jpg';
-import velo from '../../assets/banks/velo.jpg';
+import alior from '../../assets/banks/alior.webp';
+import bnp from '../../assets/banks/bnp.webp';
+import bos from '../../assets/banks/bos.webp';
+import bps from '../../assets/banks/bps.webp';
+import bsBrodnica from '../../assets/banks/bs-brodnica.webp';
+import city from '../../assets/banks/city-handlowy.webp';
+import ing from '../../assets/banks/ing.webp';
+import mbank from '../../assets/banks/mbank.webp';
+import millenium from '../../assets/banks/millenium.webp';
+import pekao from '../../assets/banks/pekao.webp';
+import pko from '../../assets/banks/pko.webp';
+import pocztowy from '../../assets/banks/pocztowy.webp';
+import santander from '../../assets/banks/santander.webp';
+import sbr from '../../assets/banks/sbr.webp';
+import velo from '../../assets/banks/velo.webp';
 
 
 type Props = {
@@ -127,7 +127,7 @@ const Partners: React.FC<Props> = (props) => {
             <div key={partner.name} className='col-3 col-sm-2 mb-4'>
               <a href={partner.url} target='_blank' rel="noopener noreferrer">
                 <img
-                  className='img-fluid'
+                  className='img-fluid m-auto'
                   src={partner.src}
                   alt={partner.name}
                   title={partner.name}
