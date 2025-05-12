@@ -77,7 +77,7 @@ const Footer: React.FC<{}> = () => {
           <div className='col pt-5 py-3 align-self-center'>
             <div>
               <small>
-                © {t('Footer.Copyright')} <b>Andrzej Poczatek</b>.{' '}
+                © {t('Footer.Copyright')} <b>Andrzej Poczatek</b>.<br/>
                 {t('Footer.All Rights Reserved')}
               </small>
             </div>
