@@ -32,7 +32,7 @@ const UnderConstruction = () => {
               <a
                 href={appSettings.facebookPageUrl}
                 target='_blank'
-                rel='noreferrer'
+                rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faFacebook} size='4x' />
               </a>

@@ -63,7 +63,7 @@ const Footer: React.FC<{}> = () => {
                 <a
                   href='https://www.infor.pl/kalkulatory/kredyty.html?fobosId=FOB0000000000000702547'
                   target='_blank'
-                  rel='noreferrer'
+                  rel="noopener noreferrer"
                 >
                   {t('Footer.ING mortgage calculator')}
                 </a>

@@ -27,7 +27,7 @@ const Contact: React.FC<Props> = (props) => {
         </div>
         <div className='row'>
           <div className='col-md-6 col-lg-4'>
-            <a href='https://maps.app.goo.gl/gkhn6VFZx2JnyYmA8' target='_blank' rel='norefferer'>
+            <a href='https://maps.app.goo.gl/gkhn6VFZx2JnyYmA8' target='_blank' rel="noopener noreferrer">
               <div className='d-flex align-items-center'>
                 <div className='pe-3'>
                   <FontAwesomeIcon icon={faLocationDot} size='2x' className='pr-3' />
@@ -61,7 +61,7 @@ const Contact: React.FC<Props> = (props) => {
             </a>
           </div>
           <div className='col-md-6 col-lg-4 mt-4'>
-            <a href='https://wa.me/48790444771' target='_blank' rel='norefferer'>
+            <a href='https://wa.me/48790444771' target='_blank' rel="noopener noreferrer">
               <div className='d-flex align-items-center'>
                 <div className='pe-3'>
                   <FontAwesomeIcon icon={faWhatsappSquare} size='2x' />
@@ -71,7 +71,7 @@ const Contact: React.FC<Props> = (props) => {
             </a>
           </div>
           <div className='col-md-6 col-lg-4 mt-4'>
-            <a href='https://m.me/poczatek.kredytu' target='_blank' rel='norefferer'>
+            <a href='https://m.me/poczatek.kredytu' target='_blank' rel="noopener noreferrer">
               <div className='d-flex align-items-center'>
                 <div className='pe-3'>
                   <FontAwesomeIcon icon={faFacebookMessenger} size='2x' />

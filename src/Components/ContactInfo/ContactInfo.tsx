@@ -29,7 +29,7 @@ const ContactInfo: React.FC<Props> = ({ className, showFacebookIcon = false }) =
           <a
             href={appSettings.facebookPageUrl}
             target='_blank'
-            rel='noreferrer'
+            rel="noopener noreferrer"
             >
             <FontAwesomeIcon icon={faFacebook} size='2x' />
           </a>

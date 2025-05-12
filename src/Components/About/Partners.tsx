@@ -125,7 +125,7 @@ const Partners: React.FC<Props> = (props) => {
         <div className='row'>
           {Object.values(partners).map((partner: PartnerAssetType) => (
             <div key={partner.name} className='col-3 col-sm-2 mb-4'>
-              <a href={partner.url} target='_blank' rel='noreferrer'>
+              <a href={partner.url} target='_blank' rel="noopener noreferrer">
                 <img
                   className='img-fluid'
                   src={partner.src}
