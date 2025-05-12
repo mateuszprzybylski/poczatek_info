@@ -26,43 +26,19 @@ i18n
       escapeValue: false // react already safes from xss
     },
     detection: detectorOptions,
-    initImmediate: false, // Ensure synchronous initialization
+    initImmediate: false, 
     fallbackLng: defaultLanguage,
     debug: false,
-  })
-  .then(() => {
-    const detectedLanguage = i18n.language;
-    const currentPath = window.location.pathname.split('/')[1];
-    
-    if (currentPath == '') {
-      i18n.changeLanguage(defaultLanguage)
-    } else {
-      // Check if the detected language is supported
-      if (supportedLanguages.includes(detectedLanguage)) {
-        const currentPath = window.location.pathname.split('/')[1];
-
-        // Redirect only if the path doesn't already match the detected language
-        if (currentPath !== detectedLanguage) {
-          window.location.pathname = `/${detectedLanguage}`;
-        }
-      } else {
-        // Redirect to default language if detected language is not supported
-        window.location.pathname = `/`;
-      }
-    }
   });
 
 export const supportedLanguages = Object.keys(resources);
 
-
-
 export const changeLanguageAndRedirect = (language) => {
   if (supportedLanguages.includes(language)) {
     i18n.changeLanguage(language).then(() => {
-      window.location.pathname = `/${language}`;
+      const newPath = `/${language}`;
+      window.history.pushState(null, '', newPath);
     });
-  } else {
-    window.location.pathname = `/`;
   }
 };
 
