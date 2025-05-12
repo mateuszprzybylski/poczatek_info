@@ -6,6 +6,7 @@ import en from './languages/en.json';
 import pl from './languages/pl.json';
 import uk from './languages/uk.json';
 
+export const defaultLanguage = 'en'
 // the translations
 // (tip move them in a JSON file and import them,
 // or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
@@ -25,11 +26,30 @@ i18n
       escapeValue: false // react already safes from xss
     },
     detection: detectorOptions,
+    initImmediate: false, // Ensure synchronous initialization
+    fallbackLng: defaultLanguage,
+    debug: false,
+  })
+  .then(() => {
+    const detectedLanguage = i18n.language;
+
+    // Check if the detected language is supported
+    if (supportedLanguages.includes(detectedLanguage)) {
+      const currentPath = window.location.pathname.split('/')[1];
+
+      // Redirect only if the path doesn't already match the detected language
+      if (currentPath !== detectedLanguage) {
+        window.location.pathname = `/${detectedLanguage}`;
+      }
+    } else {
+      // Redirect to default language if detected language is not supported
+      window.location.pathname = `/${defaultLanguage}`;
+    }
   });
 
 export const supportedLanguages = Object.keys(resources);
 
-export const defaultLanguage = 'en'
+
 
 export const changeLanguageAndRedirect = (language) => {
   if (supportedLanguages.includes(language)) {
